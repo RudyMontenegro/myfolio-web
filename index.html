@@ -14,7 +14,7 @@
     <!--Header-->
     <header class="flex w-full fixed top-0 z-1">
         <!--w-full= agarra todo el ancho, fixed= fuera del dom-->
-        <nav class="flex  justify-content-between w-full nabvar"></nav>
+        <nav class="flex justify-content-between w-full navbar">
         <span class="logo cursor-pointer">
             <img src="./assets/Logo.png" alt="Logo portafolio">
         </span>
@@ -30,7 +30,20 @@
                 <li>Servicios</li>
                 <li>Contacto</li>
             </ul>
+            <div class="hireMe_button pt-4">
+                <a href="mailTo:rudymontenegro4@gmail.com"
+                aria-label="Enviar mensaje al correo"
+                class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm">Contactame</a>
+                  <!--
+                    cursor-pointer
+                    no-underline: No sea un texto subrayado.
+                    border-round-lg: bordes redondeados.
+                    text-xl : tamaño.
+                    xl:text-sm : tamaño si pasa de xl de pantalla.
+                  -->
+            </div>
         </div>
+    </nav>
     </header>
     <!--Home page-->
     <section id="home"></section>
