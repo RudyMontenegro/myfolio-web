@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css">
+    <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css">
+    <script src="https://kit.fontawesome.com/b3f17f1dac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Header-->
+    <header class="flex w-full fixed top-0 z-1">
+        <!--w-full= agarra todo el ancho, fixed= fuera del dom-->
+        <nav class="flex justify-content-between w-full navbar">
+        <span class="logo cursor-pointer">
+            <img src="./assets/Logo.png" alt="Logo portafolio">
+        </span>
+        <input type="checkbox" aria-label="Checkbox para mostrar menu y quitar" class="checkbox xl:hidden">
+        <div class="hamburger__lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+        <div class="header__info flex align-items-center gap-3">
+            <ul class="flex flex-column xl:flex-row list-none">
+                <li>Sobre Mi</li>
+                <li>Servicios</li>
+                <li>Contacto</li>
+            </ul>
+            <div class="hireMe_button pt-4">
+                <a href="mailTo:rudymontenegro4@gmail.com"
+                aria-label="Enviar mensaje al correo"
+                class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm">Contactame</a>
+                  <!--
+                    cursor-pointer
+                    no-underline: No sea un texto subrayado.
+                    border-round-lg: bordes redondeados.
+                    text-xl : tamaño.
+                    xl:text-sm : tamaño si pasa de xl de pantalla.
+                  -->
+            </div>
+        </div>
+    </nav>
+    </header>
+    <!--Home page-->
+    <section id="home"></section>
+    <!--About Me-->
+    <section id="about"></section>
+    <!--Free lancer Section-->
+    <section id="home"></section>
+    <!--Services-->
+    <section id="services"></section>
+    <!--Portafolio-->
+    <section id="portafolio"></section>
+    <!--Footer-->
+    <section id="contac"></section>
+</body>
+</html>
