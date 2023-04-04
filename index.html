@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,51 +12,80 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <!--Fuentes de Google-->
-     <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css">
+    <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css">
     <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css">
     <script src="https://kit.fontawesome.com/b3f17f1dac.js" crossorigin="anonymous"></script>
 
 
 </head>
+
 <body>
     <!--Header-->
     <header class="flex w-full fixed top-0 z-1">
         <!--w-full= agarra todo el ancho, fixed= fuera del dom-->
         <nav class="flex justify-content-between w-full navbar">
-        <span class="logo cursor-pointer">
-            <img src="./assets/logo2.png" alt="Logo portafolio">
-        </span>
-        <input type="checkbox" aria-label="Checkbox para mostrar menu y quitar" class="checkbox xl:hidden">
-        <div class="hamburger__lines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-        </div>
-        <div class="header__info flex align-items-center gap-3">
-            <ul class="flex flex-column xl:flex-row list-none">
-                <li>Sobre Mi</li>
-                <li>Servicios</li>
-                <li>Contacto</li>
-            </ul>
-            <div class="hireMe_button pt-4">
-                <a href="mailTo:rudymontenegro4@gmail.com"
-                aria-label="Enviar mensaje al correo"
-                class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm bt-a">Contactame</a>
-                  <!--
+            <span class="logo cursor-pointer">
+                <img src="./assets/logo2.png" alt="Logo portafolio">
+            </span>
+            <input type="checkbox" aria-label="Checkbox para mostrar menu y quitar" class="checkbox xl:hidden">
+            <div class="hamburger__lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <div class="header__info flex align-items-center gap-3">
+                <ul class="flex flex-column xl:flex-row list-none">
+                    <li>Sobre Mi</li>
+                    <li>Servicios</li>
+                    <li>Contacto</li>
+                </ul>
+                <div class="hireMe_button pt-4">
+                    <a href="mailTo:rudymontenegro4@gmail.com" aria-label="Enviar mensaje al correo"
+                        class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm bt-a">Contactame</a>
+                    <!--
                     cursor-pointer
                     no-underline: No sea un texto subrayado.
                     border-round-lg: bordes redondeados.
                     text-xl : tamaño.
                     xl:text-sm : tamaño si pasa de xl de pantalla.
                   -->
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
     </header>
     <!--Home page-->
-    <section id="home"></section>
+    <div class="container">
+        <section id="home" class="home__page flex align-items-center justify-content-center xl\:justify-content-between
+    grid grid-nogutter gap-4">
+            <div class="left__content col-12 xl:col-6">
+                <div class="message__bubble triangle mb-4 md:mb-2">
+                <!--triangle 
+            mb-4  "Margen abajo"
+            md:mb-2 "si la pantalla es medianda el pargen pasa a 2"-->
+                <div class="message__text p-2 sm:p-3 text-center">
+                    <p>Hola, yo soy</p>
+                </div>
+            </div>
+            <br></br>
+                <h1 class="text-3xl sm:text-5xl md:text-7xl">Rudy Montenegro Montero</h1>
+                <p class="text-gray-500">
+                    Ingeniero en sistemas de profeción con diplomado en seguridad de la informacion en ambito movil.
+                </p>
+                <div class="home__buttons flex align-items-center gap-2 mt-6">
+                    <a href="./assets/CV.pdf" aria-label="descargar curriculum"
+                        class="cursor-pointer border-round-lg no-underline" download>Descargar CV</a>
+                    <button aria-label="Deslizar a section portafolio para mostrar mis trabajos"
+                        class="cursor-pointer border-round-lg">Mi trabajo</button>
+                </div>
+            </div>
+            <div class="right__content col-9 sm:col-6 xl:col-5">
+                    <img src="./assets/foto-perfil-r.png" alt="Foto perfil" >
+            </div>
+    </div>
+    </section>
     <!--About Me-->
     <section id="about"></section>
+    </div>
     <!--Free lancer Section-->
     <section id="home"></section>
     <!--Services-->
@@ -65,4 +95,5 @@
     <!--Footer-->
     <section id="contac"></section>
 </body>
+
 </html>
